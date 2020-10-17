@@ -4,6 +4,8 @@ package com.example.helloworld2020;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,10 +17,16 @@ public class CollegeListActivity extends AppCompatActivity {
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_college_list);
+
+        ArrayList<String> satScores = new ArrayList<>();
+        ArrayList<String> acceptanceRates = new ArrayList<>();
+        ArrayList<String> collegeNames = new ArrayList<>();
+        ArrayList<String> rankings = new ArrayList<>();
 
         try {
             File sat = new File("Sat scores.txt");
@@ -29,10 +37,7 @@ public class CollegeListActivity extends AppCompatActivity {
             FileReader frAcceptance = new FileReader(acceptance);
             FileReader frNames = new FileReader(names);
             FileReader frRankings = new FileReader(ranking);
-            ArrayList<String> satScores = new ArrayList<>();
-            ArrayList<String> acceptanceRates = new ArrayList<>();
-            ArrayList<String> collegeNames = new ArrayList<>();
-            ArrayList<String> rankings = new ArrayList<>();
+
             BufferedReader bfr = new BufferedReader(frSat);
             String line = bfr.readLine();
             while (line != null) {
@@ -62,17 +67,14 @@ public class CollegeListActivity extends AppCompatActivity {
             }
             bfr.close();
 
-            for (int c = 0; c < 25; c++) {
-                System.out.println(rankings.get(c) + ". " + collegeNames.get(c));
-                System.out.println(satScores.get(c));
-                System.out.println(acceptanceRates.get(c));
-                System.out.println();
-            }
+
+
 
         } catch (IOException e) {
         }
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_college_list);
+        TextView tv1 = (TextView)findViewById(R.id.textView1);
+        tv1.setText("Hello");
+
     }
 }
