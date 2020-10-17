@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
+        <activity
+            android:exported="true"
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.HelloWorld2020.NoActionBar"></activity>
+        <activity android:name=".welcome" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
