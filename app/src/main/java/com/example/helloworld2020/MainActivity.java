@@ -19,26 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button satBtn = (Button)findViewById(R.id.sat);
-        Button aboutBtn = (Button)findViewById(R.id.about);
         ImageView settingBtn = (ImageView)findViewById(R.id.imageView2);
 
-        satBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, StandardizedTestingActivity.class));
-            }
-        });
-        aboutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, About.class));
-            }
-        });
         settingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,18 +35,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-        public void launchCollegeSearch(View v) {
-            // Intent i = new Intent(this, CollegeSearch.class);
-            // startActivity(i);
-        }
+    public void launchCollegeSearch(View v) {
+        // Intent i = new Intent(this, CollegeSearch.class);
+        // startActivity(i);
+    }
 
     public void launchStandardizedTesting(View v) {
         Intent i = new Intent(this, StandardizedTestingActivity.class);
         startActivity(i);
     }
 
-        public void launchAbout(View v) {
-            // Intent i = new Intent(this, About.class);
-            // startActivity(i);
-        }
+    public void launchAbout(View v) {
+        Intent i = new Intent(this, About.class);
+        startActivity(i);
+    }
 }
