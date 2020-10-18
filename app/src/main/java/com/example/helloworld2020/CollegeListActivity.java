@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.renderscript.ScriptGroup;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -58,6 +59,69 @@ public class CollegeListActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+
+        /*Button gatechBtn = (Button)findViewById(R.id.gatechButton);
+        gatechBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        GATechActivity.class));
+            }
+        });
+
+        Button cornellBtn = (Button)findViewById(R.id.cornellButton);
+        cornellBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        CornellActivity.class));
+            }
+        });
+
+        Button columbiaBtn = (Button)findViewById(R.id.columbiaButton);
+        columbiaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        ColumbiaActivty.class));
+            }
+        });
+
+        Button brownBtn = (Button)findViewById(R.id.brownButton);
+        brownBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        BrownActivity.class));
+            }
+        });
+
+        Button upennBtn = (Button)findViewById(R.id.upennButton);
+        upennBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        UPennActivity.class));
+            }
+        });
+
+        Button riceBtn = (Button)findViewById(R.id.riceButton);
+        riceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        RiceActivity.class));
+            }
+        });
+
+        Button uscBtn = (Button)findViewById(R.id.uscButton);
+        uscBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CollegeListActivity.this,
+                        USCActivity.class));
+            }
+        }); */
 
     }
     public void launchMIT(View view) {
