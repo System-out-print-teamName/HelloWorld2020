@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MITActivity">
+    tools:context=".WUSTLActivity">
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Massachusetts Institute of Technology"
+        android:text="Washington University in St. Louis"
         android:textSize="20dp"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
@@ -22,7 +22,7 @@
         android:layout_height="86dp"
         android:layout_marginTop="135dp"
         android:layout_marginLeft="210dp"
-        android:src="@drawable/mit"></ImageView>
+        android:src="@drawable/wustl"></ImageView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="270dp"
-        android:text="#1">
+        android:text="#25">
     </TextView>
 
     <TextView
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="310dp"
-        android:text="1500-1570">
+        android:text="1470-1570">
     </TextView>
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="350dp"
-        android:text="7%">
+        android:text="8%">
     </TextView>
 
     <TextView
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="430dp"
-        android:text="Tim The Beaver">
+        android:text="Bear">
     </TextView>
 
     <TextView
@@ -110,14 +110,15 @@
         android:text="Subrreddit:">
     </TextView>
     <Button
-        android:id="@+id/upennSubreddit"
+        android:id="@+id/wustlSubreddit"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#C41E3A"
+        android:backgroundTint="#ffffff"
         android:layout_marginLeft="180dp"
+        android:textColor="@color/black"
         android:layout_marginTop="470dp"
-        android:text="r/mit">
+        android:text="r/washu">
     </Button>
     <TextView
         android:layout_width="wrap_content"
@@ -127,13 +128,14 @@
         android:text="Website:">
     </TextView>
     <Button
-        android:id="@+id/unpennWebsite"
+        android:id="@+id/wustlWebsite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
-        android:backgroundTint="#C41E3A"
+        android:backgroundTint="#ffffff"
+        android:textColor="@color/black"
         android:layout_marginTop="540dp"
-        android:text="mit.edu">
+        android:text="wustl.edu">
     </Button>
 
 
