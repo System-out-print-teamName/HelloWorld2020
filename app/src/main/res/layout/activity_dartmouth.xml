@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MITActivity">
+    tools:context=".DartmouthActivity">
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Massachusetts Institute of Technology"
+        android:text="Dartmouth College"
         android:textSize="20dp"
         android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
         />
 
     <ImageView
-        android:layout_width="196dp"
+        android:layout_width="303dp"
+        android:layout_height="110dp"
         android:layout_centerHorizontal="true"
-        android:layout_height="86dp"
-        android:layout_marginTop="135dp"
         android:layout_marginLeft="210dp"
-        android:src="@drawable/mit"></ImageView>
+        android:layout_marginTop="135dp"
+        android:src="@drawable/dartmouth"></ImageView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,13 +30,13 @@
         android:layout_marginLeft="40dp"
         android:text="Ranking:">
     </TextView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="270dp"
-        android:text="#1">
-    </TextView>
+        android:text="#16"></TextView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="310dp"
-        android:text="1500-1570">
+        android:text="1420-1560">
     </TextView>
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="350dp"
-        android:text="7%">
+        android:text="9%">
     </TextView>
 
     <TextView
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="390dp"
-        android:text="11,376">
+        android:text="6,350">
     </TextView>
 
     <TextView
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
         android:layout_marginTop="430dp"
-        android:text="Tim The Beaver">
+        android:text="Keggy the Keg">
     </TextView>
 
     <TextView
@@ -110,14 +110,15 @@
         android:text="Subrreddit:">
     </TextView>
     <Button
-        android:id="@+id/mitSubreddit"
+        android:id="@+id/dartmouthMuddSubreddit"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#C41E3A"
+        android:backgroundTint="#00693e"
         android:layout_marginLeft="180dp"
+        android:textColor="@color/white"
         android:layout_marginTop="470dp"
-        android:text="r/mit">
+        android:text="r/dartmouth">
     </Button>
     <TextView
         android:layout_width="wrap_content"
@@ -127,13 +128,14 @@
         android:text="Website:">
     </TextView>
     <Button
-        android:id="@+id/mitWebsite"
+        android:id="@+id/dartmouthWebsite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
-        android:backgroundTint="#C41E3A"
+        android:backgroundTint="#00693e"
+        android:textColor="@color/white"
         android:layout_marginTop="540dp"
-        android:text="mit.edu">
+        android:text="dartmouth.edu">
     </Button>
 
 

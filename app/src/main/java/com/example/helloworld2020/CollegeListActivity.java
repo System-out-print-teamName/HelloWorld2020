@@ -59,7 +59,6 @@ public class CollegeListActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-
         Button stanfordBtn = (Button)findViewById(R.id.stanfordButton);
         stanfordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,5 +112,54 @@ public class CollegeListActivity extends AppCompatActivity {
                         DukeActivity.class));
             }
         });
+    }
+    public void launchMIT(View view) {
+        Intent i = new Intent(this, MITActivity.class);
+        startActivity(i);
+    }
+    public void launchUCLA(View view) {
+        Intent i = new Intent(this, UCLAActivity.class);
+        startActivity(i);
+    }
+    public void launchUChicago(View view) {
+        Intent i = new Intent(this, UChicagoActivity.class);
+        startActivity(i);
+    }
+    public void launchJHU(View view) {
+        Intent i = new Intent(this, JHUActivity.class);
+        startActivity(i);
+    }
+    public void launchNorthwestern(View view) {
+        Intent i = new Intent(this, NorthwesternActivity.class);
+        startActivity(i);
+    }
+    public void launchTufts(View view) {
+        Intent i = new Intent(this, TuftsActivity.class);
+        startActivity(i);
+    }
+    public void launchBerkeley(View view) {
+        Intent i = new Intent(this, UCBerkeleyActivity.class);
+        startActivity(i);
+    }
+    public void launchWUSTL(View view) {
+        Intent i = new Intent(this, WUSTLActivity.class);
+        startActivity(i);
+    }
+    public void launchNotreDame(View view) {
+        Intent i = new Intent(this, NotreDameActivity.class);
+        startActivity(i);
+    }
+    public void launchUMich(View view) {
+        Intent i = new Intent(this, UMichActivity.class);
+        startActivity(i);
+    }
+
+    public void launchDartmouth(View view) {
+        Intent i = new Intent(this, DartmouthActivity.class);
+        startActivity(i);
+    }
+    public void launchHarveyMudd(View view) {
+        Intent i = new Intent(this, HarveyMuddActivity.class);
+        startActivity(i);
     }
 }
