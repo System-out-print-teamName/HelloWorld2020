@@ -11,10 +11,12 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.time.Clock;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -92,7 +94,7 @@ public class StandardizedTestingActivity extends AppCompatActivity {
                 Toast.makeText(this, "Reminder Cancelled!", Toast.LENGTH_SHORT).show();
             } else {
                 alarmManager.set(AlarmManager.RTC_WAKEUP, timeAtButtonClick +
-                        tenSecondsInMillis, pendingIntent);
+                        (1000*10*6*60*24), pendingIntent);
                 ongoingAlarm.set(true);
                 dailyAlarmButton.setBackgroundColor(Color.GREEN);
                 Toast.makeText(this, "Reminder Set!", Toast.LENGTH_SHORT).show();
