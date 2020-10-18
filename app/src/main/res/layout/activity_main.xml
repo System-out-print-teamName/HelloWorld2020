@@ -34,23 +34,12 @@
         android:text="College List" />
 
     <Button
-        android:id="@+id/collegeSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginRight="20dp"
-        android:onClick="launchCollegeSearch"
-        android:text="College Search" />
-
-    <Button
         android:id="@+id/sat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="400dp"
         android:layout_marginRight="20dp"
         android:onClick="launchStandardizedTesting"
         android:text="Standardized Testing" />
@@ -61,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="470dp"
         android:layout_marginRight="20dp"
         android:onClick="launchAbout"
         android:text="About" />

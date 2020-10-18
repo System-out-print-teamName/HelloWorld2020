@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void launchCollegeSearch(View v) {
-        // Intent i = new Intent(this, CollegeSearch.class);
-        // startActivity(i);
-    }
+//    public void launchCollegeSearch(View v) {
+//        // Intent i = new Intent(this, CollegeSearch.class);
+//        // startActivity(i);
+//    }
 
     public void launchStandardizedTesting(View v) {
         Intent i = new Intent(this, StandardizedTestingActivity.class);
