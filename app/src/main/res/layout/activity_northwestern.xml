@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NorthwesternActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Northwestern University"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="196dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="86dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="210dp"
+        android:src="@drawable/northwestern"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="40dp"
+        android:text="Ranking:">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="270dp"
+        android:text="#23">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="310dp"
+        android:text="SAT Score Range:">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="310dp"
+        android:text="1430-1550">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+
+        android:layout_marginLeft="40dp"
+        android:text="Acceptance Rate:">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="350dp"
+        android:text="8%">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="390dp"
+        android:text="Student Population:">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="390dp"
+        android:text="21,000">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+
+        android:layout_marginLeft="40dp"
+        android:text="Mascot:">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="430dp"
+        android:text="Willie the Wildcat">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="485dp"
+        android:layout_marginLeft="40dp"
+        android:text="Subrreddit:">
+    </TextView>
+    <Button
+        android:id="@+id/northwesternSubreddit"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#800080"
+        android:layout_marginLeft="180dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="470dp"
+        android:text="r/northwestern">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="555dp"
+        android:text="Website:">
+    </TextView>
+    <Button
+        android:id="@+id/northwesternWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:backgroundTint="#800080"
+        android:textColor="@color/white"
+        android:layout_marginTop="540dp"
+        android:text="northwestern.edu">
+    </Button>
+
+
+
+
+</RelativeLayout>
