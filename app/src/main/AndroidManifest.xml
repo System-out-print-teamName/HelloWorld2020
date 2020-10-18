@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
-        <activity android:name=".SatBooksActivity"></activity>
+        <activity android:name=".ActBooksActivity"></activity>
+        <activity android:name=".SatBooksActivity" />
         <activity android:name=".ActPrepActivity" />
         <activity android:name=".SatPrepActivity" />
         <activity android:name=".StandardizedTestingActivity" />
