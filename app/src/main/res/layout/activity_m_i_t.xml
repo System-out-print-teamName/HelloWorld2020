@@ -110,7 +110,7 @@
         android:text="Subrreddit:">
     </TextView>
     <Button
-        android:id="@+id/mitSubreddit"
+        android:id="@+id/upennSubreddit"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
         android:text="Website:">
     </TextView>
     <Button
-        android:id="@+id/mitWebsite"
+        android:id="@+id/unpennWebsite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="180dp"
