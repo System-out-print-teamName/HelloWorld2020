@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
+
+        <activity android:name=".DukeActivity"></activity>
+        <activity android:name=".YaleActivity" />
+        <activity android:name=".HarvardActivity" />
+        <activity android:name=".CMUActivity" />
+        <activity android:name=".CalTechActivity" />
+        <activity android:name=".StanfordActivity" />
+        <activity android:name=".MITActivity" />
         <activity android:name=".ActDatesActivity"></activity>
         <activity android:name=".SatDatesActivity" />
         <activity android:name=".CollegeListActivity" />
