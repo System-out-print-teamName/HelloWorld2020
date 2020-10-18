@@ -4,68 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SatBooksActivity">
 
     <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="277dp"
         android:layout_height="191dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="103dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="95dp"
         android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/collegeList"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/satBooksTitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginRight="20dp"
-        android:onClick="launchCollegeList"
-        android:text="College List" />
+        android:layout_alignStart="@+id/collegeBoardBookButton"
+        android:layout_alignLeft="@+id/collegeBoardBookButton"
+        android:layout_alignEnd="@+id/collegeBoardBookButton"
+        android:layout_alignRight="@+id/collegeBoardBookButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="-3dp"
+        android:gravity="center"
+        android:text="SAT Prep Books"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/collegeSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="390dp"
-        android:layout_marginRight="20dp"
-        android:onClick="launchCollegeSearch"
-        android:text="College Search" />
-
-    <Button
-        android:id="@+id/sat"
+        android:id="@+id/kaplanButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="450dp"
         android:layout_marginRight="20dp"
-        android:onClick="launchStandardizedTesting"
-        android:text="Standardized Testing" />
+        android:text="Kaplan SAT Book" />
 
     <Button
-        android:id="@+id/about"
+        android:id="@+id/collegeBoardBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="20dp"
+        android:text="College Board SAT Book" />
+
+    <Button
+        android:id="@+id/barronsBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="20dp"
+        android:text="Barron's SAT Book" />
+
+    <Button
+        android:id="@+id/princetonReviewButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="510dp"
         android:layout_marginRight="20dp"
-        android:onClick="launchAbout"
-        android:text="About" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="71dp"
-        android:layout_height="71dp"
-        android:layout_alignParentRight="true"
-        app:srcCompat="@drawable/settingsgear" />
-
+        android:text="The Princeton Review SAT Book" />
 
 </RelativeLayout>
