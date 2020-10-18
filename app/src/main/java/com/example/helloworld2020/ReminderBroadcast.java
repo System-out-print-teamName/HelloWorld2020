@@ -10,7 +10,7 @@ import androidx.core.app.NotificationManagerCompat;
 public class ReminderBroadcast extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "notifyLemubit")
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "notifyStudy")
                 .setSmallIcon(R.drawable.logo)
                 .setContentTitle("Study Reminder")
                 .setContentText("Make sure to study today!")
@@ -19,6 +19,7 @@ public class ReminderBroadcast extends BroadcastReceiver{
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
 
         notificationManager.notify(200, builder.build());
+
 
     }
 }
