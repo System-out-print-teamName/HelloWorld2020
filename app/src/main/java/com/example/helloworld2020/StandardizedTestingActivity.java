@@ -38,11 +38,29 @@ public class StandardizedTestingActivity extends AppCompatActivity {
 
         String nextSatTest = "August";
         Button nextSatBtn = (Button)findViewById(R.id.nextSatDateButton);
-        nextSatBtn.setText("Next Sat Test: " + nextSatTest);
+        nextSatBtn.setText("Upcoming SAT Dates");
 
         String nextActTest = "August";
         Button nextActBtn = (Button)findViewById(R.id.nextActDateButton);
-        nextActBtn.setText("Next Act Test: " + nextActTest);
+        nextActBtn.setText("Upcoming ACT Dates");
+
+        Button actDatesBtn = (Button)findViewById(R.id.nextActDateButton);
+        actDatesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StandardizedTestingActivity.this,
+                        ActDatesActivity.class));
+            }
+        });
+
+        Button satDatesBtn = (Button)findViewById(R.id.nextSatDateButton);
+        satDatesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StandardizedTestingActivity.this,
+                        SatDatesActivity.class));
+            }
+        });
 
         Button satPrepBtn = (Button)findViewById(R.id.satPrepButton);
         satPrepBtn.setOnClickListener(new View.OnClickListener() {

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
+
         <activity android:name=".DukeActivity"></activity>
         <activity android:name=".YaleActivity" />
         <activity android:name=".HarvardActivity" />
@@ -16,6 +17,8 @@
         <activity android:name=".CalTechActivity" />
         <activity android:name=".StanfordActivity" />
         <activity android:name=".MITActivity" />
+        <activity android:name=".ActDatesActivity"></activity>
+        <activity android:name=".SatDatesActivity" />
         <activity android:name=".CollegeListActivity" />
         <activity android:name=".Setting" />
         <activity
@@ -28,7 +31,6 @@
         <activity android:name=".ActPrepActivity" />
         <activity android:name=".SatPrepActivity" />
         <activity android:name=".StandardizedTestingActivity" />
-        <activity android:name=".CollegeListActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
