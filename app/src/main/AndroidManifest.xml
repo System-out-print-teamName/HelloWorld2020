@@ -14,11 +14,12 @@
         <activity android:name=".ActPrepActivity" />
         <activity android:name=".SatPrepActivity" />
         <activity android:name=".StandardizedTestingActivity" />
+        <activity android:name=".CollegeListActivity">
+        </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

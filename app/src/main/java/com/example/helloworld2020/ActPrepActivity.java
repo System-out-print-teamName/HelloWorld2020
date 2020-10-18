@@ -14,7 +14,7 @@ public class ActPrepActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act_prep);
-
+      
         Button unionTestPrepBtn = (Button)findViewById(R.id.unionTestPrepButton);
         unionTestPrepBtn.setOnClickListener(v -> {
             Uri uri = Uri.parse("https://uniontestprep.com/act");

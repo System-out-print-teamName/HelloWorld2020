@@ -28,7 +28,7 @@ public class StandardizedTestingActivity extends AppCompatActivity {
     AtomicBoolean ongoingAlarm = new AtomicBoolean(false);
 
     private boolean alarmOnOFf;
-
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,7 +75,7 @@ public class StandardizedTestingActivity extends AppCompatActivity {
 
 
         dailyAlarmButton.setOnClickListener(v -> {
-
+          
             Intent intent = new Intent(StandardizedTestingActivity.this,
                     ReminderBroadcast.class);
             PendingIntent pendingIntent =
@@ -131,7 +131,7 @@ public class StandardizedTestingActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
     }
-
+  
     public void saveData() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
