@@ -60,7 +60,7 @@ public class CollegeListActivity extends AppCompatActivity {
             }
         }
 
-        /*Button gatechBtn = (Button)findViewById(R.id.gatechButton);
+        Button gatechBtn = (Button)findViewById(R.id.gatechButton);
         gatechBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,7 +121,7 @@ public class CollegeListActivity extends AppCompatActivity {
                 startActivity(new Intent(CollegeListActivity.this,
                         USCActivity.class));
             }
-        }); */
+        });
 
     }
     public void launchMIT(View view) {
