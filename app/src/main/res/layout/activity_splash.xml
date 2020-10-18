@@ -28,9 +28,9 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="480dp"
         android:layout_marginEnd="2dp"
+        android:fontFamily="sans-serif-thin"
         android:gravity="center"
         android:text="Created during Hello World 2020"
-        android:fontFamily="casual"
         android:textColor="#000000"
         android:textSize="27dp"></TextView>
 

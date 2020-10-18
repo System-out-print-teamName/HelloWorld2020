@@ -44,5 +44,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void launchCollegeList(View v) {
+        Intent i = new Intent(this, CollegeListActivity.class);
+        startActivity(i);
+    }
 
+        public void launchCollegeSearch(View v) {
+            // Intent i = new Intent(this, CollegeSearch.class);
+            // startActivity(i);
+        }
+
+    public void launchStandardizedTesting(View v) {
+        Intent i = new Intent(this, StandardizedTestingActivity.class);
+        startActivity(i);
+    }
+
+        public void launchAbout(View v) {
+            // Intent i = new Intent(this, About.class);
+            // startActivity(i);
+        }
 }
