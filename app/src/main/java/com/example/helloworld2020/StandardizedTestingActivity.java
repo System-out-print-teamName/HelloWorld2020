@@ -109,6 +109,13 @@ public class StandardizedTestingActivity extends AppCompatActivity {
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         });
+
+        Button actSiteBtn = (Button)findViewById(R.id.actSiteButton);
+        actSiteBtn.setOnClickListener(v -> {
+            Uri uri = Uri.parse("https://www.act.org/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
     }
 
 
