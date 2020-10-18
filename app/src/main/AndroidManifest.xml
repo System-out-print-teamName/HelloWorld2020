@@ -9,8 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
-        <activity android:name=".MITActivity"></activity>
-        <activity android:name=".CollegeListActivity"></activity>
+        <activity android:name=".UMichActivity"></activity>
+        <activity android:name=".DartmouthActivity" />
+        <activity android:name=".HarveyMuddActivity" />
+        <activity android:name=".UCLAActivity" />
+        <activity android:name=".JHUActivity" />
+        <activity android:name=".UChicagoActivity" />
+        <activity android:name=".UCBerkeleyActivity" />
+        <activity android:name=".TuftsActivity" />
+        <activity android:name=".NorthwesternActivity" />
+        <activity android:name=".NotreDameActivity" />
+        <activity android:name=".WUSTLActivity" />
+        <activity android:name=".MITActivity" />
+        <activity android:name=".CollegeListActivity" />
         <activity android:name=".Setting" />
         <activity
             android:name=".About"
@@ -22,7 +33,7 @@
         <activity android:name=".ActPrepActivity" />
         <activity android:name=".SatPrepActivity" />
         <activity android:name=".StandardizedTestingActivity" />
-        <activity android:name=".CollegeListActivity"></activity>
+        <activity android:name=".CollegeListActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
