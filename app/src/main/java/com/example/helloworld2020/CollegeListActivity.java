@@ -30,8 +30,8 @@ public class CollegeListActivity extends AppCompatActivity {
         ArrayList<String> collegeNames = new ArrayList<>();
         ArrayList<String> rankings = new ArrayList<>();
 
-        TextView textView = (TextView)findViewById(R.id.textView1);
-        textView.setMovementMethod(new ScrollingMovementMethod());
+        //TextView textView = (TextView)findViewById(R.id.textView1);
+        //textView.setMovementMethod(new ScrollingMovementMethod());
 
         String data = "";
         int rank = 1;
@@ -50,7 +50,7 @@ public class CollegeListActivity extends AppCompatActivity {
                     sbuffer.append("#" + rank + " - " + data + "\n\n");
                     rank += 1;
                 }
-                textView.setText(sbuffer);
+                //textView.setText(sbuffer);
                 is.close();
             } catch(Exception e) {
                 e.printStackTrace();

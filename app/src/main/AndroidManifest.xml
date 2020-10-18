@@ -9,27 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
-      
-        <activity android:name=".CollegeListActivity">
-          
-        </activity>
-        <activity android:name=".Setting"></activity>
+        <activity android:name=".MITActivity"></activity>
+        <activity android:name=".CollegeListActivity"></activity>
+        <activity android:name=".Setting" />
         <activity
             android:name=".About"
             android:exported="true"
             android:label="@string/title_activity_about"
             android:theme="@style/Theme.HelloWorld2020.NoActionBar" />
-        <activity android:name=".ActBooksActivity"></activity>
+        <activity android:name=".ActBooksActivity" />
         <activity android:name=".SatBooksActivity" />
         <activity android:name=".ActPrepActivity" />
         <activity android:name=".SatPrepActivity" />
         <activity android:name=".StandardizedTestingActivity" />
-        <activity android:name=".CollegeListActivity">
-        </activity>
+        <activity android:name=".CollegeListActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
