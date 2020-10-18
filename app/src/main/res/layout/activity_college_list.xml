@@ -9,13 +9,11 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:layout_centerVertical="true"
-        android:textColor="@color/white"
+        android:layout_centerInParent="true"
         android:text="RANDOM"
-        >
+        android:textColor="@color/white"
+        android:textSize="18sp">
 
     </TextView>
 

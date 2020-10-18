@@ -19,8 +19,6 @@ import java.util.ArrayList;
 
 public class CollegeListActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -36,6 +34,7 @@ public class CollegeListActivity extends AppCompatActivity {
         textView.setMovementMethod(new ScrollingMovementMethod());
 
         String data = "";
+        int rank = 1;
 
         StringBuffer sbuffer = new StringBuffer();
 
@@ -43,10 +42,13 @@ public class CollegeListActivity extends AppCompatActivity {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 
+        sbuffer.append("Top 25 Computer Science Colleges in the US\n\n");
+
         if (is != null) {
             try {
                 while ((data = reader.readLine()) != null) {
-                    sbuffer.append(data + "\n");
+                    sbuffer.append("#" + rank + " - " + data + "\n\n");
+                    rank += 1;
                 }
                 textView.setText(sbuffer);
                 is.close();
