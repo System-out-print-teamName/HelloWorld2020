@@ -12,8 +12,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="103dp"
         android:src="@drawable/logo" />
 
     <Button
@@ -60,7 +60,12 @@
         android:onClick="launchAbout"
         android:text="About" />
 
-
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/settingsgear" />
 
 
 </RelativeLayout>

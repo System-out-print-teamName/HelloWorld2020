@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld2020">
+
+        <activity android:name=".Setting"></activity>
+        <activity
+            android:name=".About"
+            android:exported="true"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.HelloWorld2020.NoActionBar" />
         <activity android:name=".ActBooksActivity"></activity>
         <activity android:name=".SatBooksActivity" />
         <activity android:name=".ActPrepActivity" />
