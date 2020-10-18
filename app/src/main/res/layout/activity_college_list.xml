@@ -19,7 +19,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="50dp"
         android:layout_height="wrap_content"
-        android:onClick="launchMIT"
         android:text="Mit" />
     <Button
         android:id="@+id/stanfordButton"
@@ -132,7 +131,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="750dp"
         android:layout_height="wrap_content"
-        android:onClick="launchUMich"
         android:text="University of Michigan" />
 
     <Button
@@ -142,7 +140,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="800dp"
         android:layout_height="wrap_content"
-        android:onClick="launchDartmouth"
         android:text="Dartmouth" />
 
     <Button
@@ -152,7 +149,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="850dp"
         android:layout_height="wrap_content"
-        android:onClick="launchHarveyMudd"
         android:text="Harvey Mudd" />
     <Button
         android:id="@+id/uclaButton"
@@ -160,7 +156,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="900dp"
-        android:onClick="launchUCLA"
         android:layout_height="wrap_content"
         android:text="UCLA" />
     <Button
@@ -170,7 +165,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="950dp"
         android:layout_height="wrap_content"
-        android:onClick="launchJHU"
         android:text="Johns Hopkins" />
     <Button
         android:id="@+id/uchicagoButton"
@@ -179,7 +173,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="1000dp"
         android:layout_height="wrap_content"
-        android:onClick="launchUChicago"
         android:text="University of Chicago" />
     <Button
         android:id="@+id/ucBerkeleyButton"
@@ -188,7 +181,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="1050dp"
         android:layout_height="wrap_content"
-        android:onClick="launchBerkeley"
         android:text="UC Berkeley" />
     <Button
         android:id="@+id/tuftsButton"
@@ -197,7 +189,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="1100dp"
         android:layout_height="wrap_content"
-        android:onClick="launchTufts"
         android:text="Tufts" />
 
     <Button
@@ -207,7 +198,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="1150dp"
         android:layout_height="wrap_content"
-        android:onClick="launchNorthwestern"
         android:text="Northwestern" />
 
     <Button
@@ -217,7 +207,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="1200dp"
         android:layout_height="wrap_content"
-        android:onClick="launchNotreDame"
         android:text="Notre Dame" />
     <Button
         android:id="@+id/wustlButton"
@@ -226,7 +215,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="1250dp"
         android:layout_height="wrap_content"
-        android:onClick="launchWUSTL"
         android:text="Washington University in St. Louis" />
 
 
