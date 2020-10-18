@@ -88,6 +88,17 @@
         android:layout_marginRight="0dp"
         android:text="A Reminder to Study Every 24 Hours?" />
 
+    <Button
+        android:id="@+id/collegeBoardSiteButton"
+        android:layout_width="214dp"
+        android:layout_height="66dp"
+        android:layout_alignStart="@+id/actPrepButton"
+        android:layout_alignLeft="@+id/actPrepButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="564dp"
+        android:text="College Board SAT Website" />
 
 
 </RelativeLayout>

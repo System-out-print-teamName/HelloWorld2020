@@ -9,6 +9,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -101,8 +102,14 @@ public class StandardizedTestingActivity extends AppCompatActivity {
             }
             saveData();
         });
-    }
 
+        Button collegeBoardSiteBtn = (Button)findViewById(R.id.collegeBoardSiteButton);
+        collegeBoardSiteBtn.setOnClickListener(v -> {
+            Uri uri = Uri.parse("https://collegereadiness.collegeboard.org/sat");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
+    }
 
 
     private void createNotificationChannel() {
