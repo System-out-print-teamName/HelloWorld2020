@@ -4,6 +4,8 @@ package com.example.helloworld2020;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -11,6 +13,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class CollegeListActivity extends AppCompatActivity {
@@ -28,53 +32,27 @@ public class CollegeListActivity extends AppCompatActivity {
         ArrayList<String> collegeNames = new ArrayList<>();
         ArrayList<String> rankings = new ArrayList<>();
 
-        try {
-            File sat = new File("Sat scores.txt");
-            File acceptance = new File("Acceptance Rates.txt");
-            File names = new File("College Names.txt");
-            File ranking = new File("Rankings.txt");
-            FileReader frSat = new FileReader(sat);
-            FileReader frAcceptance = new FileReader(acceptance);
-            FileReader frNames = new FileReader(names);
-            FileReader frRankings = new FileReader(ranking);
+        TextView textView = (TextView)findViewById(R.id.textView1);
+        textView.setMovementMethod(new ScrollingMovementMethod());
 
-            BufferedReader bfr = new BufferedReader(frSat);
-            String line = bfr.readLine();
-            while (line != null) {
-                satScores.add(line);
-                line = bfr.readLine();
+        String data = "";
+
+        StringBuffer sbuffer = new StringBuffer();
+
+        InputStream is = this.getResources().openRawResource(R.raw.collegenames);
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+
+        if (is != null) {
+            try {
+                while ((data = reader.readLine()) != null) {
+                    sbuffer.append(data + "\n");
+                }
+                textView.setText(sbuffer);
+                is.close();
+            } catch(Exception e) {
+                e.printStackTrace();
             }
-            bfr.close();
-            bfr = new BufferedReader(frAcceptance);
-            line = bfr.readLine();
-            while (line != null) {
-                acceptanceRates.add(line);
-                line = bfr.readLine();
-            }
-            bfr.close();
-            bfr = new BufferedReader(frNames);
-            line = bfr.readLine();
-            while (line != null) {
-                collegeNames.add(line);
-                line = bfr.readLine();
-            }
-            bfr.close();
-            bfr = new BufferedReader(frRankings);
-            line = bfr.readLine();
-            while (line != null) {
-                rankings.add(line);
-                line = bfr.readLine();
-            }
-            bfr.close();
-
-
-
-
-        } catch (IOException e) {
         }
-
-        TextView tv1 = (TextView)findViewById(R.id.textView1);
-        tv1.setText("Hello");
-
     }
 }
