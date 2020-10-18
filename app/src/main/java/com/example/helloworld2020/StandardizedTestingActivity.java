@@ -1,6 +1,5 @@
 package com.example.helloworld2020;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlarmManager;
@@ -8,15 +7,28 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import java.time.Clock;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class StandardizedTestingActivity extends AppCompatActivity {
 
+    public static final String SHARED_PREFS = "sharedPrefs";
+    public static final String ALARM = "alarm";
+    AtomicBoolean ongoingAlarm = new AtomicBoolean(false);
+
+    private boolean alarmOnOFf;
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,9 +64,18 @@ public class StandardizedTestingActivity extends AppCompatActivity {
 
         Button dailyAlarmButton = (Button)findViewById(R.id.dailyAlarm);
 
-        dailyAlarmButton.setOnClickListener(v -> {
-            Toast.makeText(this, "Reminder Set!", Toast.LENGTH_SHORT).show();
+        loadData();
+        updateViews();
 
+        if(ongoingAlarm.get() == true) {
+            dailyAlarmButton.setBackgroundColor(Color.GREEN);
+        } else if (ongoingAlarm.get() == false) {
+            dailyAlarmButton.setBackgroundColor(Color.RED);
+        }
+
+
+        dailyAlarmButton.setOnClickListener(v -> {
+          
             Intent intent = new Intent(StandardizedTestingActivity.this,
                     ReminderBroadcast.class);
             PendingIntent pendingIntent =
@@ -66,23 +87,65 @@ public class StandardizedTestingActivity extends AppCompatActivity {
 
             long tenSecondsInMillis = 1000 * 10;
 
-            alarmManager.set(AlarmManager.RTC_WAKEUP, timeAtButtonClick +
-                    tenSecondsInMillis, pendingIntent);
+            if (ongoingAlarm.get() == true) {
+                alarmManager.cancel(pendingIntent);
+
+                ongoingAlarm.set(false);
+                dailyAlarmButton.setBackgroundColor(Color.RED);
+                Toast.makeText(this, "Reminder Cancelled!", Toast.LENGTH_SHORT).show();
+            } else {
+                alarmManager.set(AlarmManager.RTC_WAKEUP, timeAtButtonClick +
+                        (1000*10*6*60*24), pendingIntent);
+                ongoingAlarm.set(true);
+                dailyAlarmButton.setBackgroundColor(Color.GREEN);
+                Toast.makeText(this, "Reminder Set!", Toast.LENGTH_SHORT).show();
+            }
+            saveData();
+        });
+
+        Button collegeBoardSiteBtn = (Button)findViewById(R.id.collegeBoardSiteButton);
+        collegeBoardSiteBtn.setOnClickListener(v -> {
+            Uri uri = Uri.parse("https://collegereadiness.collegeboard.org/sat");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        });
+
+        Button actSiteBtn = (Button)findViewById(R.id.actSiteButton);
+        actSiteBtn.setOnClickListener(v -> {
+            Uri uri = Uri.parse("https://www.act.org/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         });
     }
 
 
-
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            CharSequence name = "LemubitReminderChannel";
-            String description = "Channel for Lemubit Reminder";
+            CharSequence name = "StudyReminderChannel";
+            String description = "Channel for Study Reminder";
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel("notifyLemubit", name, importance);
+            NotificationChannel channel = new NotificationChannel("notifyStudy", name, importance);
             channel.setDescription(description);
 
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
+    }
+  
+    public void saveData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(ALARM, ongoingAlarm.get());
+
+        editor.apply();
+    }
+
+    public void loadData() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        alarmOnOFf = sharedPreferences.getBoolean(ALARM, false);
+    }
+
+    public void updateViews() {
+        ongoingAlarm.set(alarmOnOFf);
     }
 }

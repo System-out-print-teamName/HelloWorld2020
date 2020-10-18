@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     public void launchCollegeList(View v) {
         Intent i = new Intent(this, CollegeListActivity.class);
         startActivity(i);
